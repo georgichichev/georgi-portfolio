@@ -1,2 +1,2 @@
-# g-folio
+# georgi-portfolio
 My personal web portfolio.
