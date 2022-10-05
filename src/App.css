@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: 'Neue Montreal Thin';
+    src: url("./fonts/PPNeueMontreal-Thin.otf");
+}
+@font-face {
+    font-family: 'Neue Montreal Medium';
+    src: url("./fonts/PPNeueMontreal-Medium.otf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    background-color: #0d0d0d;
+    color: #faf8f8;
+    font-weight:200;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.mainContainer{
+    display: flex;
+    border: solid 1px #717175;
+    height: calc(100vh - 40px);
+    width: calc(100vw - 40px);
+    padding: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.header{
+    width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header h1, .header p{
+    font-family: "Neue Montreal Thin";
+    letter-spacing: 1px;
 }
+
+.header h1{
+    font-size: 25px;
+}
+
+.header p{
+    font-size: 15px;
+}
+
+.header nav{
+    margin-top: 50px;
+}
+
+.header nav ul{
+    list-style-type: none;
+}
+
+.header nav ul li{
+    margin-bottom: 10px;
+    font-family: "Neue Montreal Medium";
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.mainContent{
+    display: flex;
+    justify-content: end;
+    width: calc(100% - 200px);
+}
+
+.aboutMe{
+    position: absolute;
+    font-family: "Neue Montreal Medium";
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 28px;
+    width: 150px;
+    align-self: end;
+}
+
+.projects{
+    position: absolute;
+    text-align: right;
+    align-self: center;
+}
+
+.project{
+    margin-bottom: 30px;
+}
+
+.projects a, .projects h3{
+    font-family: "Neue Montreal Thin";
+}
+
+.projects a{
+    color: #e5e5e5;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.projects h3{
+    font-size: 15px;
+    margin-bottom: 100px;
+}
+
+.project p{
+    font-family: "Neue Montreal Medium";
+    font-size: 17px;
+}
+
+.hide{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .mainContainer{
+        height: calc(100vh - 55px);
+        width: calc(100vw - 55px);
+        padding: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mainContainer{
+        height: calc(100vh - 75px);
+        width: calc(100vw - 75px);
+        padding: 40px;
+    }
+    .header{
+        width: 400px;
+    }
+    .header h1{
+        font-size: 50px;
+    }
+    .header p{
+        font-size: 19px;
+    }
+    .projects a{
+        font-size: 65px;
+    }
+}
+
