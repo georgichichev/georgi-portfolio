@@ -1,4 +1,4 @@
-const About = () => {
+const Home = () => {
     return(
         <section className="aboutMe">
             <p>
@@ -9,4 +9,4 @@ const About = () => {
     )
 }
 
-export default About
+export default Home
