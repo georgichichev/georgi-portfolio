@@ -128,3 +128,6 @@ yarn-error.log*
 src/fonts/PPNeueMontreal-Medium.otf
 src/fonts/PPNeueMontreal-Thin.otf
 *.otf
+.firebase/hosting.YnVpbGQ.cache
+.firebaserc
+firebase.json
