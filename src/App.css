@@ -96,7 +96,7 @@ body{
 
 .info a{
     font-family: "Neue Montreal Medium";
-    font-size: 17px;
+    font-size: 15px;
     color: #ffffff;
     margin-bottom: 20px;
     text-decoration: none;
@@ -114,6 +114,7 @@ body{
 }
 
 .certificates ul{
+    width: 250px;
     list-style-type: none;
 }
 
