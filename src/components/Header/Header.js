@@ -1,3 +1,5 @@
+import {NavLink} from "react-router-dom";
+
 const menuItems = [
     'Home',
     'Projects',
@@ -5,14 +7,18 @@ const menuItems = [
     'Contact'
 ];
 
-const Header = ({onPageClick}) => {
+const Header = () => {
     return(
         <header className="header">
             <h1>Georgi Chichev</h1>
             <p>Web Developer</p>
             <nav>
                 <ul>
-                    {menuItems.map(x => <li onClick={onPageClick} key={x}>{x}</li>)}
+                    {menuItems.map(x =>
+                        <li key={x}>
+                            <NavLink to={`/${x.toLowerCase()}`} key={x}>{x}</NavLink>
+                        </li>
+                    )}
                 </ul>
             </nav>
         </header>
