@@ -59,10 +59,14 @@ body{
 
 .header nav ul li{
     margin-bottom: 10px;
+}
+
+.header nav ul li a{
     font-family: "Neue Montreal Medium";
     font-size: 16px;
     color: #ffffff;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .mainContent{
@@ -71,7 +75,7 @@ body{
     width: calc(100% - 200px);
 }
 
-.aboutMe{
+.home{
     position: absolute;
     font-family: "Neue Montreal Medium";
     font-size: 17px;
@@ -79,6 +83,49 @@ body{
     line-height: 28px;
     width: 150px;
     align-self: end;
+}
+
+.info{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    width: 150px;
+    align-self: start;
+}
+
+.info a{
+    font-family: "Neue Montreal Medium";
+    font-size: 17px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.certificates{
+    align-self: end;
+    text-align: end;
+}
+
+.certificates h3{
+    font-family: "Neue Montreal Thin";
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.certificates ul{
+    list-style-type: none;
+}
+
+.certificates ul li{
+    margin-bottom: 5px;
+}
+
+.certificates a{
+    font-family: "Neue Montreal Medium";
+    font-size: 17px;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .projects{
