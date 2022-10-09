@@ -7,6 +7,11 @@
     src: url("./fonts/PPNeueMontreal-Medium.otf");
 }
 
+html{
+    height: 100%;
+    width: 100%;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +23,13 @@ body{
     color: #faf8f8;
     font-weight:200;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+    display: flex;
+}
+
+#root{
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +38,7 @@ body{
 .mainContainer{
     display: flex;
     border: solid 1px #717175;
-    height: calc(100vh - 40px);
+    height: calc(100% - 40px);
     width: calc(100vw - 40px);
     padding: 15px;
 }
@@ -37,15 +48,16 @@ body{
 }
 
 .header h1, .header p{
-    font-family: "Neue Montreal Thin";
     letter-spacing: 1px;
 }
 
 .header h1{
-    font-size: 25px;
+    font-family: "Neue Montreal Medium";
+    font-size: 21px;
 }
 
 .header p{
+    font-family: "Neue Montreal Thin";
     font-size: 15px;
 }
 
@@ -130,9 +142,8 @@ body{
 }
 
 .projects{
-    position: absolute;
-    text-align: right;
-    align-self: center;
+    text-align: end;
+    align-self: end;
 }
 
 .project{
@@ -151,29 +162,28 @@ body{
 
 .projects h3{
     font-size: 15px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .project p{
     font-family: "Neue Montreal Medium";
-    font-size: 17px;
-}
-
-.hide{
-    display: none;
+    font-size: 15px;
 }
 
 @media (min-width: 768px) {
     .mainContainer{
-        height: calc(100vh - 55px);
+        height: calc(100% - 55px);
         width: calc(100vw - 55px);
         padding: 30px;
+    }
+    .projects{
+        align-self: center;
     }
 }
 
 @media (min-width: 1200px) {
     .mainContainer{
-        height: calc(100vh - 75px);
+        height: calc(100% - 75px);
         width: calc(100vw - 75px);
         padding: 40px;
     }
@@ -185,6 +195,9 @@ body{
     }
     .header p{
         font-size: 19px;
+    }
+    .projects{
+        align-self: center;
     }
     .projects a{
         font-size: 65px;
