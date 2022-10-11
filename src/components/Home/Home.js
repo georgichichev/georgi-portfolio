@@ -2,8 +2,7 @@ const Home = () => {
     return(
         <section className="home">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus dolor earum explicabo hic magni
-                optio provident vel. Excepturi, laborum!
+                Born in 1999, Bulgaria. I believe web design combined with front-end coding skills can be diverse and inspiring. I am pursuing new experiences concerned about aesthetics and efficiency.
             </p>
         </section>
     )
