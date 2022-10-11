@@ -4,13 +4,16 @@ import Projects from "./components/Projects/Projects.js";
 import {BrowserRouter, Route, Routes, Navigate} from "react-router-dom";
 import Info from "./components/Info/Info.js";
 import Contact from "./components/Contact/Contact.js";
+import ParticlesBackground from "./components/ParticlesBackground/ParticlesBackground.js";
 
 function App() {
     return (
+
         <div className="mainContainer">
             <BrowserRouter>
                 <Header/>
                 <main className="mainContent">
+                    <ParticlesBackground/>
                     <Routes>
                         <Route path="/" element={<Home/>}/>
                         <Route path="/home" element={<Navigate to="/"/>}/>
