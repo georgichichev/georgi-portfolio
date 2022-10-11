@@ -170,6 +170,26 @@ body{
     font-size: 15px;
 }
 
+.contact{
+    position: absolute;
+    font-family: "Neue Montreal Medium";
+    font-size: 19px;
+    color: #ffffff;
+    line-height: 28px;
+    width: 110px;
+    align-self: end;
+}
+
+.contact p{
+    margin-bottom: 40px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
 @media (min-width: 768px) {
     .mainContainer{
         height: calc(100% - 55px);
@@ -178,6 +198,9 @@ body{
     }
     .projects{
         align-self: center;
+    }
+    .header h1{
+        font-family: "Neue Montreal Thin";
     }
 }
 
@@ -201,6 +224,9 @@ body{
     }
     .projects a{
         font-size: 65px;
+    }
+    .header h1{
+        font-family: "Neue Montreal Thin";
     }
 }
 
