@@ -13,7 +13,7 @@ const Contact = () => {
                     e.preventDefault();
                 }}
             >
-                Contact me
+                Contact me ↗
             </Link>
         </section>
     )
