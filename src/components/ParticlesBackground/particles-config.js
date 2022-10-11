@@ -2,7 +2,7 @@ const particlesConfig = {
     autoPlay: true,
     background: {
         color: {
-            value: "#0c0c0c"
+            value: "#0d0d0d"
         },
     },
     fullScreen: {
