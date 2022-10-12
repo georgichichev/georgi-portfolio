@@ -1,4 +1,6 @@
 import {NavLink} from "react-router-dom";
+import {motion} from "framer-motion";
+import React from "react";
 
 const menuItems = [
     'Home',
@@ -8,16 +10,30 @@ const menuItems = [
 ];
 
 const Header = () => {
-    return(
+    return (
         <header className="header">
             <h1>Georgi Chichev</h1>
             <p>Web Developer</p>
             <nav>
                 <ul>
                     {menuItems.map(x =>
-                        <li key={x}>
-                            <NavLink to={`/${x.toLowerCase()}`} key={x}>{x}</NavLink>
-                        </li>
+                        <motion.li
+                            key={x}
+                        >
+                            <NavLink
+                                to={`/${x.toLowerCase()}`}
+                                key={x}
+                            >
+                                <motion.p
+                                    whileHover={{
+                                        color: '#777373',
+                                        transition: { duration: 0.3 },
+                                    }}
+                                >
+                                    {x}
+                                </motion.p>
+                            </NavLink>
+                        </motion.li>
                     )}
                 </ul>
             </nav>

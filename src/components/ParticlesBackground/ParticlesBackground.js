@@ -8,16 +8,12 @@ const ParticlesBackground = () => {
         await loadFull(engine);
     }, []);
 
-    const particlesLoaded = useCallback(async (container) => {
-        await console.log(container);
-    }, []);
 
     return (
         <Particles
             className="particles"
             id="tsparticles"
             init={particlesInit}
-            loaded={particlesLoaded}
             options={particlesConfig}
         />
     );

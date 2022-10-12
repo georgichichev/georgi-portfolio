@@ -1,9 +1,14 @@
 import {Link} from "react-router-dom";
+import {motion} from "framer-motion";
+import React from "react";
+import AnimatedPage from "../AnimatedPage/AnimatedPage.js";
 
 const Contact = () => {
     return(
-        <section className="contact">
-            <p>
+        <AnimatedPage
+            className={"contact"}
+        >
+            <p className="contactText">
                 Right now, I am open for any javascript related job offers.
             </p>
             <Link
@@ -13,9 +18,17 @@ const Contact = () => {
                     e.preventDefault();
                 }}
             >
-                Contact me ↗
+                <motion.p
+                    className="contactLink"
+                    whileHover={{
+                        color: '#777373',
+                        transition: { duration: 0.3 },
+                    }}
+                >
+                    Contact me ↗
+                </motion.p>
             </Link>
-        </section>
+        </AnimatedPage>
     )
 }
 

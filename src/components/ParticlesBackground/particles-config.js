@@ -27,7 +27,7 @@ const particlesConfig = {
             type: "circle"
         },
         size: {
-            value: 0.35,
+            value: 0.3,
         },
         move: {
             angle: {

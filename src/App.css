@@ -86,11 +86,14 @@ body {
 }
 
 .header nav ul li a {
+    text-decoration: none;
+}
+
+.header nav ul li a p {
     font-family: "Neue Montreal Medium";
     font-size: 16px;
     color: #ffffff;
     cursor: pointer;
-    text-decoration: none;
 }
 
 
@@ -187,14 +190,17 @@ body {
     align-self: end;
 }
 
-.contact p {
-    margin-bottom: 40px;
+.contact a{
+    text-decoration: none;
 }
 
-.contact a {
-    text-decoration: none;
+.contactLink{
     color: white;
     font-size: 18px;
+}
+
+.contactText {
+    margin-bottom: 40px;
 }
 
 @media (min-width: 768px) {
