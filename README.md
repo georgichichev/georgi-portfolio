@@ -3,7 +3,7 @@ My personal web portfolio.
 
 #### Link
 
-https://planetino-295eb.web.app/
+https://georgichichev-15.web.app/
 
 ## Reflection
 
